@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục bằng Float</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <p class="eyebrow">BÀI THỰC HÀNH CSS</p>
+        <h1>Bố cục hai cột bằng Float</h1>
+        <p>Cột nội dung chiếm 60%, sidebar chiếm 38% và khoảng trống giữa hai cột là 2%.</p>
+    </header>
+
+    <div class="container">
+        <main class="left-column">
+            <span class="column-label">60% · FLOAT LEFT</span>
+            <h2>Nội dung chính</h2>
+            <p>
+                Đây là cột bên trái, nơi hiển thị nội dung quan trọng nhất của trang.
+                Cột sử dụng <code>width: 60%</code> và <code>float: left</code>.
+            </p>
+
+            <article class="article-card">
+                <span>01</span>
+                <div>
+                    <h3>Thiết lập chiều rộng</h3>
+                    <p>Thuộc tính width giúp chia không gian của container theo tỷ lệ mong muốn.</p>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span>02</span>
+                <div>
+                    <h3>Đưa cột sang bên trái</h3>
+                    <p>Thuộc tính float đưa phần tử về một phía và cho phép cột còn lại nằm bên cạnh.</p>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span>03</span>
+                <div>
+                    <h3>Xử lý phần tử cha</h3>
+                    <p>Pseudo-element <code>::after</code> được dùng để clear float và giữ chiều cao container.</p>
+                </div>
+            </article>
+        </main>
+
+        <aside class="right-column">
+            <span class="column-label">38% · FLOAT RIGHT</span>
+            <h2>Sidebar</h2>
+            <p>Cột bên phải chứa thông tin bổ sung, liên kết hoặc danh mục của trang.</p>
+
+            <nav aria-label="Danh mục bài học">
+                <a href="#float"><strong>01</strong> Thuộc tính float</a>
+                <a href="#clear"><strong>02</strong> Thuộc tính clear</a>
+                <a href="#box"><strong>03</strong> Box sizing</a>
+                <a href="#responsive"><strong>04</strong> Responsive</a>
+            </nav>
+
+            <div class="tip">
+                <strong>Ghi nhớ</strong>
+                <p>Tổng chiều rộng hai cột là 98%, phần 2% còn lại tạo khoảng cách tự nhiên.</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Bài thực hành bố cục hai cột bằng <strong>float</strong> và <strong>clear</strong>.</p>
+    </footer>
+</body>
+</html>
